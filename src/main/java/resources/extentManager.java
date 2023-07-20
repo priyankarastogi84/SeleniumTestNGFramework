@@ -9,7 +9,7 @@ public class extentManager {
 
 	public static ExtentSparkReporter htmlReporter; // Responsible for look
 	public static ExtentReports extent; // Responsible for entries
-	public static ExtentTest test; // Responsible for test status pass/fail
+	public static ExtentTest test; // Responsible for test status pass/Fail
 
 	public static void setup() {
 
