@@ -31,7 +31,7 @@ public class Listener extends extentManager implements ITestListener {
 			String screenshotPath = Baseclass.screenShot(Baseclass.driver, result.getName());
 
 			test.addScreenCaptureFromPath(screenshotPath); // Adding screenshot inside report//To add name in extent
-															// report
+															// Report
 		}
 	}
 
