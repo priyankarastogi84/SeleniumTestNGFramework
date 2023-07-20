@@ -15,14 +15,14 @@ import resources.commonMethods;
 
 public class LoginTestCase extends Baseclass {
 
-	@Test(dataProvider = "testData")
-	public void verifyLogin(String username, String password) throws IOException, InterruptedException {
+	@Test()
+	public void verifyLogin() throws IOException, InterruptedException {
 
 		LoginPageObjects lpo = new LoginPageObjects(driver);
 
-		lpo.enterUsername().sendKeys(username);
+		lpo.enterUsername().sendKeys("priya");
 
-		lpo.enterPassword().sendKeys(password);
+		lpo.enterPassword().sendKeys("secure123");
 		
 		Thread.sleep(3000);
 
@@ -38,7 +38,7 @@ public class LoginTestCase extends Baseclass {
 
 	@DataProvider
 	public Object[][] testData() { // test data()is data provider name
-		Object[][] data = new Object[3][2]; // create the object of object class
+		Object[][] data = new Object[3][2]; // create the object of object Class
 		data[0][0] = Constants.username1; // 1st user name
 		data[0][1] = Constants.password1; // 1st password
 		data[1][0] = Constants.username2; // 2nd user name
